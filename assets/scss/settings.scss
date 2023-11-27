@@ -1,0 +1,8 @@
+@forward 'vuetify/settings' with (
+    $button-border-radius: 18px,
+    $card-border-radius: 18px,
+    $sheet-border-radius: 18px,
+    $list-item-icon-margin-end: 12px,
+    $list-item-icon-margin-start: 4px,
+    $text-field-details-padding-inline: 8px !default,
+);

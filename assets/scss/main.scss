@@ -1,0 +1,72 @@
+$default-border-radius: 18px;
+$default-input-height: 50px;
+
+.absolute-center {
+	position: absolute !important;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.custom-box-shadow {
+	box-shadow: 0px 2px 4px 2px rgba(59, 125, 182, 0.068) !important;
+}
+
+.custom-border {
+	border: rgba($color: #263238, $alpha: 0.1) solid 1px !important;
+}
+
+.v-input--density-comfortable {
+	--v-input-control-height: 50px !important;
+}
+
+// Custom v-text-field border radius
+.v-field--variant-outlined .v-field__outline {
+	border-top-left-radius: $default-border-radius !important;
+	border-bottom-left-radius: $default-border-radius !important;
+	border-top-right-radius: $default-border-radius !important;
+	border-bottom-right-radius: $default-border-radius !important;
+}
+
+.v-field__outline__start{
+	flex: 0 0 $default-border-radius !important;
+}
+
+// custom v-text-field--outlined label color
+.v-field--variant-outlined:not(.v-field--error):not(.v-field--focused) .v-label.v-field-label--floating {
+	color: black !important;
+}
+
+.custom-date-picker-input {
+	height: 50px;
+	border-radius: 12px !important;
+	background-color: #F5F5F5 !important;
+
+	&.dp-white {
+		background-color: white !important;
+	}
+
+	&.dp-borderless {
+		border: none !important;
+	}
+}
+
+.svg {
+	&.white {
+		filter: invert(100%);
+	}
+
+	&.disabled {
+		filter: invert(60%);
+	}
+
+	&.pink-lighten-1 {
+		filter: invert(43%) sepia(78%) saturate(3918%) hue-rotate(317deg) brightness(96%) contrast(93%);
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
