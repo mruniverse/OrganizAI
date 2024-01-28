@@ -10,7 +10,7 @@ export default defineNuxtConfig({
 		registerType: "autoUpdate",
 		manifest: {
 			name: "Nuxt Vite PWA",
-			short_name: "NuxtVitePWA",
+			short_name: "OrganizAI",
 			theme_color: "#ffffff",
 			icons: [
 				{
@@ -19,14 +19,14 @@ export default defineNuxtConfig({
 					type: "image/png",
 				},
 				{
-					src: "pwa-512x512.png",
+					src: "icon.jpg",
 					sizes: "512x512",
-					type: "image/png",
+					type: "image/jpg",
 				},
 				{
-					src: "pwa-512x512.png",
+					src: "icon.jpg",
 					sizes: "512x512",
-					type: "image/png",
+					type: "image/jpg",
 					purpose: "any maskable",
 				},
 			],

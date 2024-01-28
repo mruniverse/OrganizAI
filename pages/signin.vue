@@ -19,7 +19,7 @@
 					label="Password"
 					bg-color="white"
 					:type="passwordVisibility ? 'text' : 'password'"
-					:append-inner-icon="passwordVisibility ? 'mdi-eye-outline' : 'mdi-eye-off-outline'"
+					:append-inner-icon="passwordVisibility ? 'fas fa-eye' : 'fas fa-eye-slash'"
 					@click:append-inner="() => (passwordVisibility = !passwordVisibility)"
 					@keyup.enter="login()" />
 			</v-row>

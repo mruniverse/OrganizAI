@@ -1,6 +1,11 @@
 $default-border-radius: 18px;
 $default-input-height: 50px;
 
+.fixed-bottom {
+	bottom: 0 !important;
+	position: fixed !important;
+}
+
 .absolute-center {
 	position: absolute !important;
 	top: 50%;
@@ -20,6 +25,13 @@ $default-input-height: 50px;
 	--v-input-control-height: 50px !important;
 }
 
+// Background with border radius text and select
+.v-field.v-field--appended.v-field--center-affix.v-field--has-background.v-field--variant-outlined.v-theme--customTheme.bg-grey-lighten-4.v-locale--is-ltr,
+.v-field.v-field--center-affix.v-field--has-background.v-field--variant-outlined.v-theme--customTheme.bg-grey-lighten-4.v-locale--is-ltr {
+	border-radius: $default-border-radius !important;
+
+}
+
 // Custom v-text-field border radius
 .v-field--variant-outlined .v-field__outline {
 	border-top-left-radius: $default-border-radius !important;
@@ -28,7 +40,7 @@ $default-input-height: 50px;
 	border-bottom-right-radius: $default-border-radius !important;
 }
 
-.v-field__outline__start{
+.v-field__outline__start {
 	flex: 0 0 $default-border-radius !important;
 }
 
@@ -62,6 +74,10 @@ $default-input-height: 50px;
 
 	&.pink-lighten-1 {
 		filter: invert(43%) sepia(78%) saturate(3918%) hue-rotate(317deg) brightness(96%) contrast(93%);
+	}
+
+	&.primary {
+		filter: invert(37%) sepia(74%) saturate(3674%) hue-rotate(211deg) brightness(99%) contrast(94%);
 	}
 }
 
